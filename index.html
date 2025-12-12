@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your all-in-one Cross-Cultural Living Assistant (CCLA). Navigate university life, connect with a global community, and simplify shopping for international students and travelers in Yekaterinburg.">
+    <title>CCLA - Cross-Cultural Living Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* 确保功能卡片在链接内部时样式不变，并添加悬停效果 */
+        .feature-link {
+            text-decoration: none; /* 移除链接下划线 */
+            color: inherit; /* 继承文字颜色 */
+            display: block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        /* 移除 feature-link:hover 的 transform 效果，因为它已经被 feature-item-bg 的 ::before 伪元素代替 */
+        .feature-link:hover .feature-item { 
+            transform: none; 
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-color) !important;
+        }
+
+        /* 调整主页图片样式以适应 urfu.png */
+        .hero-image-container {
+            max-width: 900px;
+            margin: 30px auto;
+            text-align: center;
+        }
+        .hero-image-container img {
+            max-height: 300px; 
+            width: auto;
+            object-fit: contain; 
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="About.HTML"><i class="fas fa-info-circle"></i> About</a>
+        <a href="Project.html"><i class="fas fa-project-diagram"></i> Features</a>
+        <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="container">
+        <header class="text-center animate__animated animate__fadeIn">
+            <h1 class="animate__animated animate__zoomIn">
+                <i class="fas fa-globe-americas"></i> CCLA
+                <br>
+                <small style="font-size: 1.2rem; color: #666;">Cross-Cultural Living Assistant</small>
+            </h1>
+            
+            <p class="mt-2" style="font-size: 1.5rem; font-weight: 500; color: var(--primary-color);">
+                **Navigate Your New World with Confidence.**
+            </p>
+            <p style="font-size: 1.1rem; max-width: 800px; margin: 10px auto 30px; color: #555;">
+                Bridging cultures and simplifying everyday life for international students and global travelers in Yekaterinburg.
+            </p>
+            
+            <div class="hero-image-container animate__animated animate__zoomIn animate__delay-1s">
+                <img src="urfu.png" alt="Supported by Ural Federal University" class="img-responsive img-hover">
+            </div>
+            
+        </header>
+
+        <div class="section-card animate__animated animate__fadeInUp mt-5">
+            <h2 class="text-center">
+                <i class="fas fa-magic"></i> Our Core Features
+            </h2>
+            <p class="text-center mb-4" style="color: #666; font-size: 1.1rem;">
+                Everything you need to succeed and settle in.
+            </p>
+
+            <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                
+                <a href="student_guide.html" class="feature-link">
+                    <div id="guide-card" class="feature-item feature-item-bg animate__animated animate__fadeInUp">
+                        <div class="feature-content">
+                            <i class="fas fa-user-graduate" style="font-size: 2rem; margin-bottom: 5px;"></i>
+                            <h4>Student Essential Guide</h4>
+                            <p>Step-by-step guidance for visa, enrollment, and university procedures. **(Click for Details)**</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="community_platform.html" class="feature-link">
+                    <div id="community-card" class="feature-item feature-item-bg animate__animated animate__fadeInUp animate__delay-0-1s">
+                        <div class="feature-content">
+                            <i class="fas fa-users" style="font-size: 2rem; margin-bottom: 5px;"></i>
+                            <h4>Global Community Platform</h4>
+                            <p>Connect with peers, share experiences, and get local recommendations and advice. **(Click for Details)**</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="shopping_page.html" class="feature-link">
+                    <div id="shopping-card" class="feature-item feature-item-bg animate__animated animate__fadeInUp animate__delay-0-2s">
+                        <div class="feature-content">
+                            <i class="fas fa-shopping-cart" style="font-size: 2rem; margin-bottom: 5px;"></i>
+                            <h4>Smart Cloud Shopping</h4>
+                            <p>Scan product tags for real-time translation, price comparisons, and deals. **(Click for Details)**</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="About.HTML" class="btn" style="padding: 16px 50px;">
+                    <i class="fas fa-play-circle"></i> Learn More About CCLA
+                </a>
+                <a href="login_register.html" class="btn" style="background: #f8f9fa; color: var(--secondary-color); margin-left: 20px;">
+                    <i class="fas fa-user-plus"></i> **Sign Up / Log In**
+                </a>
+            </div>
+        </div>
+
+    </div> 
+    
+    <footer style="background: var(--secondary-color); color: white; padding: 40px 0; margin-top: 60px;">
+        <div class="container text-center">
+            <p>&copy; 2024 CCLA - Cross-Cultural Living Assistant. All rights reserved.</p>
+            <p class="mt-1">Developed at Ural Federal University | Supporting International Students Since 2023</p>
+            <div class="mt-2" style="display: flex; justify-content: center; gap: 20px;">
+                <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-telegram"></i></a>
+                <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

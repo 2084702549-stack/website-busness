@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Cloud Shopping | CCLA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* 购物选项卡片样式 */
+        .option-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: var(--transition);
+            text-decoration: none;
+            display: block;
+            height: 100%;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-color);
+        }
+        
+        .option-card h3 {
+            color: var(--secondary-color);
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .option-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .option-card i {
+            font-size: 3.5rem;
+        }
+
+        /* 选项网格布局 */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .app-mockup {
+            max-width: 400px;
+            margin: 30px auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About.HTML"><i class="fas fa-info-circle"></i> About</a>
+    <a href="Project.html"><i class="fas fa-project-diagram"></i> Features</a>
+    <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</nav>
+
+    <div class="container animate__animated animate__fadeIn">
+        <header class="text-center">
+            <h1 class="animate__animated animate__slideInDown">
+                <i class="fas fa-shopping-basket" style="color: var(--primary-color);"></i>
+                Smart Cloud Shopping Assistant
+            </h1>
+            <p class="mt-2" style="font-size: 1.2rem; color: #555; max-width: 800px; margin: 10px auto 40px;">
+                Simplify your international grocery shopping experience with our two core tools.
+            </p>
+
+            <div class="app-mockup animate__animated animate__zoomIn">
+                <img src="./IMG/图片2.png" alt="Shopping Scan Interface" style="width: 100%; height: auto; display: block;">
+            </div>
+
+        </header>
+        
+        <div class="options-grid animate__animated animate__fadeInUp">
+            
+            <a href="#" class="option-card" title="Start translating labels immediately" style="border: 2px solid #2196F3;">
+                <i class="fas fa-camera" style="color: #2196F3;"></i>
+                <h3>1. Photo Translation & Price Check</h3>
+                <p>Instantly translate product labels, ingredients, and nutritional information by scanning with your phone camera. Compare prices and check for local deals.</p>
+                <span class="btn-sm" style="background: #2196F3; color: white; margin-top: 15px; display: inline-block; padding: 8px 20px;">Launch Translator</span>
+            </a>
+            
+            <a href="login_register.html" class="option-card" title="Access member-only benefits" style="border: 2px solid #FF9800;">
+                <i class="fas fa-user-tag" style="color: #FF9800;"></i>
+                <h3>2. Supermarket Member Access</h3>
+                <p>Log in or register your local supermarket loyalty card. Access exclusive member discounts, track points, and view personalized offers.</p>
+                <span class="btn-sm" style="background: #FF9800; color: white; margin-top: 15px; display: inline-block; padding: 8px 20px;">Go to Member Login</span>
+            </a>
+        </div>
+
+        <div class="section-card mt-5 text-center animate__animated animate__fadeInUp animate__delay-1s">
+            <p style="font-style: italic; color: #888;">Note: This service requires app integration for full functionality (camera access and real-time scanning).</p>
+        </div>
+    </div> 
+    
+    <footer style="background: var(--secondary-color); color: white; padding: 40px 0; margin-top: 60px;">
+        <div class="container text-center">
+            <p>&copy; 2024 CCLA - Cross-Cultural Living Assistant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Essential Guide | CCLA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .step-card {
+            background-color: var(--white);
+            border-left: 5px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .step-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        .step-card h3 i {
+            margin-right: 15px;
+            color: var(--primary-color);
+        }
+        .step-card p {
+            margin-top: 10px;
+            color: #555;
+        }
+        .app-mockup {
+            max-width: 400px;
+            margin: 30px auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About.HTML"><i class="fas fa-info-circle"></i> About</a>
+    <a href="Project.html"><i class="fas fa-project-diagram"></i> Features</a>
+    <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</nav>
+
+    <div class="container animate__animated animate__fadeIn">
+        <header class="text-center">
+            <h1 class="animate__animated animate__slideInDown">
+                <i class="fas fa-user-graduate" style="color: #4CAF50;"></i>
+                Student Essential Guide
+            </h1>
+            <p class="mt-2" style="font-size: 1.2rem; color: #555; max-width: 800px; margin: 10px auto 40px;">
+                Your reliable roadmap to administrative procedures and essential services in Yekaterinburg.
+            </p>
+            
+            <div class="app-mockup animate__animated animate__zoomIn">
+                <img src="./IMG/图片1..png" alt="App Translation and Guide Interface" style="width: 100%; height: auto; display: block;">
+            </div>
+            
+        </header>
+        
+        <div class="section-card animate__animated animate__fadeInUp">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Guidance</h2>
+            <p style="color: #666;">We break down complex processes into simple, multilingual instructions.</p>
+
+            <div class="step-card">
+                <h3><i class="fas fa-passport"></i> 1. Visa & Migration Registration</h3>
+                <p>Complete official mandatory registration and extend your visa with confidence. Get location maps, required document checklists, and translation assistance.</p>
+            </div>
+            
+            <div class="step-card">
+                <h3><i class="fas fa-university"></i> 2. University Enrollment Procedures</h3>
+                <p>A guided tour through campus registration, obtaining student ID, settling dormitory fees, and finding key administrative offices.</p>
+            </div>
+            
+            <div class="step-card">
+                <h3><i class="fas fa-hospital"></i> 3. Mandatory Medical Checkups</h3>
+                <p>We provide directions to accredited clinics, step-by-step guidance for the health examination process, and terminology translation.</p>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="login_register.html" class="btn"><i class="fas fa-lock"></i> Access Full Guide (Login Required)</a>
+            </div>
+        </div>
+
+    </div> 
+    
+    <footer style="background: var(--secondary-color); color: white; padding: 40px 0; margin-top: 60px;">
+        <div class="container text-center">
+            <p>&copy; 2024 CCLA - Cross-Cultural Living Assistant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

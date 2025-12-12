@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Community Platform | CCLA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .community-feature {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            transition: var(--transition);
+        }
+        .community-feature:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .community-feature i {
+            font-size: 3rem;
+            color: #2196F3;
+            margin-bottom: 15px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .app-mockup {
+            max-width: 400px;
+            margin: 30px auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About.HTML"><i class="fas fa-info-circle"></i> About</a>
+    <a href="Project.html"><i class="fas fa-project-diagram"></i> Features</a>
+    <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</nav>
+
+    <div class="container animate__animated animate__fadeIn">
+        <header class="text-center">
+            <h1 class="animate__animated animate__slideInDown">
+                <i class="fas fa-users" style="color: #2196F3;"></i>
+                Global Community Platform
+            </h1>
+            <p class="mt-2" style="font-size: 1.2rem; color: #555; max-width: 800px; margin: 10px auto 40px;">
+                Connect with peers, share experiences, and get trusted local knowledge from international students and travelers.
+            </p>
+            
+            <div class="app-mockup animate__animated animate__zoomIn">
+                <img src="./IMG/picture6.png" alt="Community Platform Interface" style="width: 100%; height: auto; display: block;">
+            </div>
+            
+        </header>
+        
+        <div class="section-card animate__animated animate__fadeInUp">
+            <h2><i class="fas fa-clipboard-list"></i> Key Community Features</h2>
+
+            <div class="grid-3">
+                <div class="community-feature">
+                    <i class="fas fa-comments"></i>
+                    <h3>Peer Advice Forums</h3>
+                    <p>Ask questions about accommodation, transportation, local culture, and university life.</p>
+                </div>
+                <div class="community-feature">
+                    <i class="fas fa-star"></i>
+                    <h3>Verified Local Reviews</h3>
+                    <p>Read authentic evaluations of restaurants, shops, scenic spots, and hotels shared by the community.</p>
+                </div>
+                <div class="community-feature">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Event & Activity Planner</h3>
+                    <p>Discover local meetups, student events, and group trips organized by CCLA users.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="login_register.html" class="btn" style="background: #2196F3;"><i class="fas fa-people-arrows"></i> Join the Conversation</a>
+            </div>
+        </div>
+    </div> 
+    
+    <footer style="background: var(--secondary-color); color: white; padding: 40px 0; margin-top: 60px;">
+        <div class="container text-center">
+            <p>&copy; 2024 CCLA - Cross-Cultural Living Assistant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
